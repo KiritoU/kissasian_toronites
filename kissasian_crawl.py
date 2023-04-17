@@ -16,7 +16,7 @@ if __name__ == "__main__":
             isExistPage = crawler.crawl_page(
                 f"{CONFIG.KISSASIAN_NEW_AND_HOST_PAGE}?page={page}"
             )
-            if not isExistPage and page >= CONFIG.KISSASIAN_NEW_AND_HOST_PAGE:
+            if not isExistPage and page >= CONFIG.KISSASIAN_NEW_AND_HOST_PAGE_LAST_PAGE:
                 page = 2
             else:
                 page += 1
